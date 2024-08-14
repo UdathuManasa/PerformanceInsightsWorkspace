@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>routeConfigId</name>
+        <page display_value="Performance Insight Workspace">07a6e149a2c4d21014aad3be450aa32a</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 10:41:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>83a6e1491cc4d210254cc12225739a1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>routeConfigId</sys_name>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_update_name>sys_ux_page_property_83a6e1491cc4d210254cc12225739a1a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 10:41:21</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_1366865_performa.07a6e149a2c4d21014aad3be450aa32a.root.routeConfigId</unique_name>
+        <value>76a302f10b131010a8b1c96237673a61</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=83a6e1491cc4d210254cc12225739a1a"/>
+</record_update>

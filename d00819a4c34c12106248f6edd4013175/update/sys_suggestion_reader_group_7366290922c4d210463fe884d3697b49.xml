@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_suggestion_reader_group">
+    <sys_suggestion_reader_group action="INSERT_OR_UPDATE">
+        <click_in_mode>false</click_in_mode>
+        <context_config_id display_value="Performance Insight Workspace AI Search Configuration">fb66290932c4d210e36a70d4119f1d45</context_config_id>
+        <limit>5</limit>
+        <order>600</order>
+        <section_header>Suggested</section_header>
+        <suggestion_type>Search-based Suggested Results Reader Group for Starter Workspace AI Search Configuration</suggestion_type>
+        <sys_class_name>sys_suggestion_reader_group</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 10:40:20</sys_created_on>
+        <sys_id>7366290922c4d210463fe884d3697b49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Search-based Suggested Results Reader Group for Starter Workspace AI Search Configuration</sys_name>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_update_name>sys_suggestion_reader_group_7366290922c4d210463fe884d3697b49</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 10:40:20</sys_updated_on>
+    </sys_suggestion_reader_group>
+</record_update>

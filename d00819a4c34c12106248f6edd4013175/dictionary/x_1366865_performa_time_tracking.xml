@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a86d51a0c38c12106248f6edd4013143" label="Time Tracking" max_length="40" name="x_1366865_performa_time_tracking" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Blocker" max_length="40" name="blocker" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="encode_utf8=false" display="true" label="Issue number" mandatory="true" max_length="40" name="task_reference" type="choice">
+            <choice/>
+        </element>
+        <element label="Time taken for analysis (hrs)" mandatory="true" max_length="38" name="time_taken_for_analysis" type="decimal"/>
+        <element label="Time taken for development (hrs)" mandatory="true" max_length="15" name="time_taken_for_development" type="decimal"/>
+        <element label="Time taken for meeting (hrs)" mandatory="true" max_length="15" name="time_taken_for_meeting" type="decimal"/>
+        <element label="Total Time Taken (hrs)" max_length="20" name="total_time_taken" type="decimal"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Workaround" max_length="40" name="workaround" type="string"/>
+        <index name="index">
+            <element name="task_reference"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

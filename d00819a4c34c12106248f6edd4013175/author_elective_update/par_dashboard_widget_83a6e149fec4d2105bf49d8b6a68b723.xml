@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">c3a6e149b9c4d21056890d2454c76322</canvas>
+        <component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component>
+        <component_props>{"scoreSize":"md","headingPosition":"top","sparklineStyle":"area","showScoreDate":false,"useRelativeScoreTime":false,"showScoreUpdateTime":true,"enableRealTimeUpdate":true,"showZero":true,"colorConfig":{"type":"default"},"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Task Tracking","sourceType":"table","tableOrViewName":"x_1366865_performa_task_tracking","filterQuery":"","id":"dGFibGV0YXNrMTY1Mzg0MjI1MTUxMQ==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"headerTitle":"Critical Tasks","showBorder":true,"bareBorder":false,"showDataPassthrough":false,"dataPassthrough":null,"metrics":[{"dataSource":"dGFibGV0YXNrMTY1Mzg0MjI1MTUxMQ==","id":"ZEdGaWJHVjBZWE5yTVRZMU16ZzBNakkxTVRVeE1RPT0xNjUzODQyMjUyNzkw","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":null,"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableDrilldown":true,"showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"period":"M","dateFormat":"default","hideMatrixAggregate":false,"newReporting":false,"configVersion":"23.0.0-ci-SNAPSHOT","filterConfigurations":[]}</component_props>
+        <h>9</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 10:41:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>83a6e149fec4d2105bf49d8b6a68b723</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_update_name>par_dashboard_widget_83a6e149fec4d2105bf49d8b6a68b723</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 10:41:25</sys_updated_on>
+        <visualization/>
+        <w>16</w>
+        <widget_props/>
+        <x>32</x>
+        <y>3</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</application>
+        <file_path/>
+        <instance_id>5c667e941b1ebd18e84d2f8dee4bcb9c</instance_id>
+        <instance_name>dev199205</instance_name>
+        <name>par_dashboard_widget_83a6e149fec4d2105bf49d8b6a68b723</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">c3a6e149b9c4d21056890d2454c76322</canvas><component display_value="Single score">d24d53f60350de7a652caf3188a46ed2</component><component_props>{"scoreSize":"md","headingPosition":"top","sparklineStyle":"area","showScoreDate":false,"useRelativeScoreTime":false,"showScoreUpdateTime":true,"enableRealTimeUpdate":true,"showZero":true,"colorConfig":{"type":"default"},"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Task Tracking","sourceType":"table","tableOrViewName":"x_1366865_performa_task_tracking","filterQuery":"","id":"dGFibGV0YXNrMTY1Mzg0MjI1MTUxMQ==","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"headerTitle":"Critical Tasks","showBorder":true,"bareBorder":false,"showDataPassthrough":false,"dataPassthrough":null,"metrics":[{"dataSource":"dGFibGV0YXNrMTY1Mzg0MjI1MTUxMQ==","id":"ZEdGaWJHVjBZWE5yTVRZMU16ZzBNakkxTVRVeE1RPT0xNjUzODQyMjUyNzkw","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":null,"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableDrilldown":true,"showMaximumRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"period":"M","dateFormat":"default","hideMatrixAggregate":false,"newReporting":false,"configVersion":"23.0.0-ci-SNAPSHOT","filterConfigurations":[]}</component_props><h>9</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-14 10:41:22</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>83a6e149fec4d2105bf49d8b6a68b723</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package><sys_policy/><sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope><sys_update_name>par_dashboard_widget_83a6e149fec4d2105bf49d8b6a68b723</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-14 10:41:25</sys_updated_on><visualization/><w>16</w><widget_props/><x>32</x><y>3</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>854494612</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>100815e8c34c12106248f6edd40131f0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 10:41:25</sys_created_on>
+        <sys_id>90b62549c3c4d2106248f6edd40131ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191507a6b110000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 10:41:25</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>58b6254978c4d2100a2d42be3d0f7eab</update_guid>
+        <update_guid_history>58b6254978c4d2100a2d42be3d0f7eab:854494612,90b625496ec4d2105521d4163f29f2aa:1610159566</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">00ec2581c308d2106248f6edd40131ed</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 11:08:27</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>188bea104f494a00b5b26f7e2f640000</sys_id>
+        <sys_metadata>83a6e149fec4d2105bf49d8b6a68b723</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_scope_delete display_value="">07f1d999c63c48b9912e0b43af9871b9</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_83a6e149fec4d2105bf49d8b6a68b723</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_83a6e149fec4d2105bf49d8b6a68b723">90b62549c3c4d2106248f6edd40131ac</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 11:08:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

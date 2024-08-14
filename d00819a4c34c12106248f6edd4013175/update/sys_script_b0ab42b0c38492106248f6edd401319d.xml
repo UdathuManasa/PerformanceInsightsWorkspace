@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1366865_performa_time_tracking</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Task on Creating Time Tracking </name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    // Get the related task record from the task_tracking table
+    var taskGr = new GlideRecord('x_1366865_performa_task_tracking');
+	taskGr.addQuery('issue_number', current.getValue('task_reference'));
+    taskGr.addQuery('user_id', current.getValue('user'));
+	taskGr.query();
+    if (taskGr.next()) {
+		
+        var expectedTimeForDevelopment = parseFloat(taskGr.getValue('expected_time_for_development'));
+		var expectedTimeForAnalysis = parseFloat(taskGr.getValue('expected_time_for_analysis'));
+
+		var finishedTimeForAnalysis = parseFloat(taskGr.getValue('time_taken_for_analysis')) || 0;
+		var finishedTimeForDevelopment = parseFloat(taskGr.getValue('time_taken_for_development')) || 0;
+
+        var takenTimeForAnalysis = parseFloat(current.getValue('time_taken_for_analysis')) || 0;
+        var takenTimeForDevelopment = parseFloat(current.getValue('time_taken_for_development')) || 0;
+		
+        // Check if the time taken for development exceeds the expected time
+        if ((takenTimeForDevelopment+finishedTimeForDevelopment) > expectedTimeForDevelopment) {
+            gs.addErrorMessage('Time taken for development exceeds the expected time of ' + expectedTimeForDevelopment + ' hours.');
+            current.setAbortAction(true); // Prevent the record from being saved
+        }
+
+		// Check if the time taken for analysis exceeds the expected time
+        if ((takenTimeForAnalysis+finishedTimeForAnalysis) > expectedTimeForAnalysis) {
+            gs.addErrorMessage('Time taken for analysis exceeds the expected time of ' + expectedTimeForAnalysis + ' hours.');
+            current.setAbortAction(true); // Prevent the record from being saved
+        }
+
+		// Accumulate the time
+        var accumulatedTimeForDevelopment = finishedTimeForDevelopment + takenTimeForDevelopment;
+        var accumulatedTimeForAnalysis = takenTimeForAnalysis+finishedTimeForAnalysis;
+
+		// Calculate Percentages
+		var percentageForDevelopment = (accumulatedTimeForDevelopment / expectedTimeForDevelopment) * 100;
+        var percentageForAnalysis = (accumulatedTimeForAnalysis / expectedTimeForAnalysis) * 100;
+
+		//Update Meeting Hours
+		var meetingHours = parseFloat(taskGr.getValue('time_taken_for_meeting'))+
+		parseFloat(current.getValue('time_taken_for_meeting'));
+
+		// Update Workaround and Blocker
+        var currentWorkaround = current.getValue('workaround') || '';
+        var currentBlocker = current.getValue('blocker') || '';
+        var taskWorkaround = taskGr.getValue('workaround') || '';
+        var taskBlocker = taskGr.getValue('blocker') || '';
+
+		
+		// Handle Workaround
+		if (currentWorkaround && taskWorkaround) {
+			updatedWorkaround = taskWorkaround + '; ' + currentWorkaround;
+		} else if (currentWorkaround) {
+			updatedWorkaround = currentWorkaround;
+		} else {
+			updatedWorkaround = taskWorkaround;
+		}
+
+		// Handle Blocker
+		if (currentBlocker && taskBlocker) {
+			updatedBlocker = taskBlocker + '; ' + currentBlocker;
+		} else if (currentBlocker) {
+			updatedBlocker = currentBlocker;
+		} else {
+			updatedBlocker = taskBlocker;
+}
+
+		// Remove any unwanted semicolons at the start or end
+		updatedWorkaround = updatedWorkaround.replace(/^; |; $/, '').trim();
+		updatedBlocker = updatedBlocker.replace(/^; |; $/, '').trim();
+
+        // Update the task_tracking record
+        taskGr.setValue('time_taken_for_development', accumulatedTimeForDevelopment);
+        taskGr.setValue('time_taken_for_analysis', accumulatedTimeForAnalysis);
+		taskGr.setValue('percentage_for_development', percentageForDevelopment);
+        taskGr.setValue('percentage_for_analysis', percentageForAnalysis);
+		taskGr.setValue('time_taken_for_meeting',meetingHours);
+		taskGr.setValue('workaround', updatedWorkaround);
+        taskGr.setValue('blocker', updatedBlocker);
+        taskGr.update();
+    } else {
+        gs.addErrorMessage('Associated task could not be found.');
+        current.setAbortAction(true); // Prevent the record from being saved
+    }
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-13 18:46:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b0ab42b0c38492106248f6edd401319d</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Update Task on Creating Time Tracking </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_update_name>sys_script_b0ab42b0c38492106248f6edd401319d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 07:26:27</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b0ab42b0c38492106248f6edd401319d"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>b0ab42b0c38492106248f6edd401319d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-13 18:46:45</sys_created_on>
+        <sys_id>7f2c4a70c38492106248f6edd40131e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-13 18:46:45</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

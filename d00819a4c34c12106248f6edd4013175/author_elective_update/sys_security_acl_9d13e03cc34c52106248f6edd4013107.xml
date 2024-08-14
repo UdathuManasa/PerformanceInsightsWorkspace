@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <decision_type>allow</decision_type>
+        <description>Default access control on x_1366865_performa_user_team_group</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1366865_performa_user_team_group</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-13 11:07:34</sys_created_on>
+        <sys_id>9d13e03cc34c52106248f6edd4013107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1366865_performa_user_team_group</sys_name>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_update_name>sys_security_acl_9d13e03cc34c52106248f6edd4013107</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-13 11:07:34</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</application>
+        <file_path/>
+        <instance_id>5c667e941b1ebd18e84d2f8dee4bcb9c</instance_id>
+        <instance_name>dev199205</instance_name>
+        <name>sys_security_acl_9d13e03cc34c52106248f6edd4013107</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><decision_type>allow</decision_type><description>Default access control on x_1366865_performa_user_team_group</description><local_or_existing>Local</local_or_existing><name>x_1366865_performa_user_team_group</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-13 11:07:34</sys_created_on><sys_id>9d13e03cc34c52106248f6edd4013107</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1366865_performa_user_team_group</sys_name><sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package><sys_policy/><sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope><sys_update_name>sys_security_acl_9d13e03cc34c52106248f6edd4013107</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-13 11:07:34</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-1603802881</payload_hash>
+        <record_name>x_1366865_performa_user_team_group</record_name>
+        <reverted_from/>
+        <source>100815e8c34c12106248f6edd40131f0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-13 11:07:34</sys_created_on>
+        <sys_id>5d13e03cc34c52106248f6edd401310a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1914b6bfeaf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-13 11:07:34</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>5113e03c554c5210d16b3a87dcb4380a</update_guid>
+        <update_guid_history>5113e03c554c5210d16b3a87dcb4380a:-1603802881</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 08:00:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>591f39c0d86b4a00920b97b74c710000</sys_id>
+        <sys_metadata>9d13e03cc34c52106248f6edd4013107</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1366865_performa_user_team_group</sys_name>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_parent display_value="">2913e03cc34c52106248f6edd401313c</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_scope_delete display_value="">07f1d999c63c48b9912e0b43af9871b9</sys_scope_delete>
+        <sys_update_name>sys_security_acl_9d13e03cc34c52106248f6edd4013107</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_9d13e03cc34c52106248f6edd4013107">5d13e03cc34c52106248f6edd401310a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 08:00:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1366865_performa.TaskTrackingIssues</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>TaskTrackingIssues</name>
+        <script><![CDATA[var TaskTrackingIssues = Class.create();
+TaskTrackingIssues.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getIssuesForUser: function() {
+        var userId = this.getParameter('sysparm_user_id'); // Get the user ID passed from the client script
+        var issues = [];
+        
+        var gr = new GlideRecord('x_1366865_performa_task_tracking'); // Task Tracking Table
+        gr.addQuery('user_id', userId);
+        gr.query();
+        
+        while (gr.next()) {
+            issues.push(gr.getValue('issue_number'));
+        }
+        
+        return JSON.stringify(issues); // Return the issues as a JSON string
+    },
+    type: 'TaskTrackingIssues'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-13 18:16:05</sys_created_on>
+        <sys_id>bff40278c34492106248f6edd401316e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>TaskTrackingIssues</sys_name>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_update_name>sys_script_include_bff40278c34492106248f6edd401316e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-13 18:20:30</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>bff40278c34492106248f6edd401316e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-13 18:16:05</sys_created_on>
+        <sys_id>6e2542b4c34492106248f6edd4013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-13 18:16:05</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</application>
+        <file_path/>
+        <instance_id>5c667e941b1ebd18e84d2f8dee4bcb9c</instance_id>
+        <instance_name>dev199205</instance_name>
+        <name>sys_script_include_bff40278c34492106248f6edd401316e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1366865_performa.TaskTrackingIssues&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;TaskTrackingIssues&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var TaskTrackingIssues = Class.create();
+TaskTrackingIssues.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getIssuesForUser: function() {
+        var userId = this.getParameter('sysparm_user_id'); // Get the user ID passed from the client script
+        var issues = [];
+        
+        var gr = new GlideRecord('x_1366865_performa_task_tracking'); // Task Tracking Table
+        gr.addQuery('user_id', userId);
+        gr.query();
+        
+        while (gr.next()) {
+            issues.push(gr.getValue('issue_number'));
+        }
+        
+        return JSON.stringify(issues); // Return the issues as a JSON string
+    },
+    type: 'TaskTrackingIssues'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-13 18:16:05&lt;/sys_created_on&gt;&lt;sys_id&gt;bff40278c34492106248f6edd401316e&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;TaskTrackingIssues&lt;/sys_name&gt;&lt;sys_package display_value="Performance Insight Workspace" source="x_1366865_performa"&gt;d00819a4c34c12106248f6edd4013175&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Performance Insight Workspace"&gt;d00819a4c34c12106248f6edd4013175&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_bff40278c34492106248f6edd401316e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-13 18:20:30&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;bff40278c34492106248f6edd401316e&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-13 18:16:05&lt;/sys_created_on&gt;&lt;sys_id&gt;6e2542b4c34492106248f6edd4013138&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-13 18:16:05&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1706646918</payload_hash>
+        <record_name>TaskTrackingIssues</record_name>
+        <reverted_from/>
+        <source>100815e8c34c12106248f6edd40131f0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-13 18:20:31</sys_created_on>
+        <sys_id>d72606b8c34492106248f6edd4013130</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1914cf85e270000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-13 18:20:31</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>5f2606b88a449210174521ad6f673b2f</update_guid>
+        <update_guid_history>5f2606b88a449210174521ad6f673b2f:-1706646918,76250678bb4492106f7499e782290032:949005544</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-13 18:22:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>0a59fd5081eb4f96857030e276a70e91</sys_id>
+        <sys_metadata>bff40278c34492106248f6edd401316e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TaskTrackingIssues</sys_name>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_scope_delete display_value="">07f1d999c63c48b9912e0b43af9871b9</sys_scope_delete>
+        <sys_update_name>sys_script_include_bff40278c34492106248f6edd401316e</sys_update_name>
+        <sys_update_version display_value="sys_script_include_bff40278c34492106248f6edd401316e">d72606b8c34492106248f6edd4013130</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-13 18:22:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
