@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1366865_performa.user_team_group_user" name="x_1366865_performa.user_team_group_user">9d13e0f8c34c52106248f6edd40131b1</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-13 11:07:33</sys_created_on>
+        <sys_id>d913e0f8c34c52106248f6edd40131b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>9d13e0f8c34c52106248f6edd40131b1</sys_name>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_update_name>sys_embedded_help_role_d913e0f8c34c52106248f6edd40131b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-13 11:07:33</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

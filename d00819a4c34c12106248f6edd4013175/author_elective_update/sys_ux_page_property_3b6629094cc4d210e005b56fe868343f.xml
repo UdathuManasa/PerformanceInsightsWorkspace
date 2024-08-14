@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description>A default view for Performance Insight Workspace generated</description>
+        <name>view</name>
+        <page display_value="">bf662909ecc4d210bf4dd439ac7e284e</page>
+        <required_translations/>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 10:40:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>3b6629094cc4d210e005b56fe868343f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>view</sys_name>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_update_name>sys_ux_page_property_3b6629094cc4d210e005b56fe868343f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 10:40:20</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_1366865_performa.bf662909ecc4d210bf4dd439ac7e284e.root.view</unique_name>
+        <value>workspace-performance-insight-workspace-1</value>
+    </sys_ux_page_property>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</application>
+        <file_path/>
+        <instance_id>5c667e941b1ebd18e84d2f8dee4bcb9c</instance_id>
+        <instance_name>dev199205</instance_name>
+        <name>sys_ux_page_property_3b6629094cc4d210e005b56fe868343f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description>A default view for Performance Insight Workspace generated</description><name>view</name><page display_value="">bf662909ecc4d210bf4dd439ac7e284e</page><required_translations/><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-14 10:40:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>3b6629094cc4d210e005b56fe868343f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>view</sys_name><sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package><sys_policy/><sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope><sys_update_name>sys_ux_page_property_3b6629094cc4d210e005b56fe868343f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-14 10:40:20</sys_updated_on><type>string</type><unique_name>x_1366865_performa.bf662909ecc4d210bf4dd439ac7e284e.root.view</unique_name><value>workspace-performance-insight-workspace-1</value></sys_ux_page_property></record_update>]]></payload>
+        <payload_hash>-427142939</payload_hash>
+        <record_name>view</record_name>
+        <reverted_from/>
+        <source>5fe80820c30012106248f6edd40131cf</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2024-08-12 14:34:48</sys_created_on>
+        <sys_id>d386ed09c3c4d2106248f6edd4013168</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>19147035b400000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Page Property</type>
+        <update_guid>9386ed093ac4d21098d2c5e12fe2d168</update_guid>
+        <update_guid_history>9386ed093ac4d21098d2c5e12fe2d168:-427142939</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 10:40:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>44d8f14af1ba42f8bc0f5423baf0fa40</sys_id>
+        <sys_metadata>3b6629094cc4d210e005b56fe868343f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>view</sys_name>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_scope_delete display_value="">07f1d999c63c48b9912e0b43af9871b9</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_3b6629094cc4d210e005b56fe868343f</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_3b6629094cc4d210e005b56fe868343f">d386ed09c3c4d2106248f6edd4013168</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 10:40:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

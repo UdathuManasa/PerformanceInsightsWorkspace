@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="002c9520c38c12106248f6edd401315a" label="Task Tracking" max_length="40" name="x_1366865_performa_task_tracking" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Blocker" max_length="800000" name="blocker" type="string"/>
+        <element label="Expected Time for analysis (hrs)" mandatory="true" max_length="15" name="expected_time_for_analysis" type="decimal"/>
+        <element label="Expected time for development (hrs)" mandatory="true" max_length="15" name="expected_time_for_development" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Issue number" mandatory="true" max_length="40" name="issue_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="epic" label="Issue type" mandatory="true" max_length="40" name="issue_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Case Task" value="case_task"/>
+                <element inactive_on_update="false" label="Defect" value="defect"/>
+                <element inactive_on_update="false" label="Enhancement" value="enhancement"/>
+                <element inactive_on_update="false" label="Epic" value="epic"/>
+                <element inactive_on_update="false" label="Other" value="other"/>
+                <element inactive_on_update="false" label="Problem" value="problem"/>
+                <element inactive_on_update="false" label="Story" value="story"/>
+            </choice>
+        </element>
+        <element label="Percentage for analysis (%)" max_length="15" name="percentage_for_analysis" type="decimal"/>
+        <element label="Percentage for development (%)" max_length="15" name="percentage_for_development" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Problem" mandatory="true" max_length="800000" name="problem" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Solution" mandatory="true" max_length="800000" name="solution" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="not_started" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Not Started" sequence="0" value="not_started"/>
+                <element inactive="true" inactive_on_update="true" label="Started" sequence="1" value="started"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in_progress"/>
+                <element inactive_on_update="false" label="Closed" sequence="3" value="closed"/>
+            </choice>
+        </element>
+        <element label="Time taken for analysis (hrs)" max_length="15" name="time_taken_for_analysis" type="decimal"/>
+        <element label="Time taken for development (hrs)" max_length="15" name="time_taken_for_development" type="decimal"/>
+        <element label="Time taken for meeting (hrs)" max_length="15" name="time_taken_for_meeting" type="decimal"/>
+        <element attributes="encode_utf8=false" label="User ID" max_length="32" name="user_id" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Workaround" max_length="800000" name="workaround" type="string"/>
+        <index name="index">
+            <element name="user_id"/>
+        </index>
+    </element>
+</database>

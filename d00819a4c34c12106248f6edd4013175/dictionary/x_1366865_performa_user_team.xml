@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="94c20945c304d2106248f6edd40131d2" label="User Team" max_length="40" name="x_1366865_performa_user_team" text_index="true" type="collection">
+        <element choice="1" default="1" label="Group Name" mandatory="true" max_length="40" name="group_name" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="ITAM" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="ITSM" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="AIML" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Platform" sequence="3" value="3"/>
+            </choice>
+        </element>
+        <element label="Manager" mandatory="true" max_length="40" name="manager" type="boolean"/>
+        <element choice="1" default="1" label="Role" mandatory="true" max_length="40" name="role" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Developer" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Quality Engineer" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Dev Manager" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Quality Manager" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element choice="1" label="Team Name" mandatory="true" max_length="40" name="team_name" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="SAM" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="SAAS" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="MATRIX" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element label="User" mandatory="true" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

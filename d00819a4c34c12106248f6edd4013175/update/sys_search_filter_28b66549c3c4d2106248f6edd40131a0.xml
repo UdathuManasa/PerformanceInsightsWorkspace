@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_search_source display_value="User Team">db75ad85c3c4d2106248f6edd40131f4</ais_search_source>
+        <label>User Team</label>
+        <name>User Team</name>
+        <order>300</order>
+        <search_context_config display_value="Performance Insight Workspace AI Search Configuration">43a6e1492ec4d210fe4daa003a4ae821</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 10:41:27</sys_created_on>
+        <sys_id>28b66549c3c4d2106248f6edd40131a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User Team</sys_name>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_update_name>sys_search_filter_28b66549c3c4d2106248f6edd40131a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 10:41:27</sys_updated_on>
+    </sys_search_filter>
+</record_update>

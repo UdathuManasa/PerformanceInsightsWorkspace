@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>User Team Group</name>
+        <order>100</order>
+        <roles>x_1366865_performa.user_team_group_user,x_1366865_performa.performance_insight_admin,x_1366865_performa.performance_insight_user,x_1366865_performa.user_team_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-13 11:07:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d913a03cc34c52106248f6edd40131fc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>User Team Group</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_update_name>sys_app_application_d913a03cc34c52106248f6edd40131fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 08:02:18</sys_updated_on>
+        <title>User Team Group</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

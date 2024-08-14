@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="DELETE">
+        <choices/>
+        <description/>
+        <name>chrome_footer</name>
+        <page display_value="">5975e9855bc4d2106d7a8ffaa7a23ff4</page>
+        <required_translations>[ ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 10:36:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>0175e9850ac4d2100a1434011eea90e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_footer</sys_name>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_update_name>sys_ux_page_property_0175e9850ac4d2100a1434011eea90e5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 10:36:04</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_1366865_performa.5975e9855bc4d2106d7a8ffaa7a23ff4.root.chrome_footer</unique_name>
+        <value>{"public_page":{"enable_footer_topbar":false,"footer_topbar_options":{},"enable_footer_bar":false,"footer_bar_options":{}}}</value>
+    </sys_ux_page_property>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</application>
+        <file_path/>
+        <instance_id>5c667e941b1ebd18e84d2f8dee4bcb9c</instance_id>
+        <instance_name>dev199205</instance_name>
+        <name>sys_ux_page_property_0175e9850ac4d2100a1434011eea90e5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property"><sys_ux_page_property action="INSERT_OR_UPDATE"><choices/><description/><name>chrome_footer</name><page display_value="">5975e9855bc4d2106d7a8ffaa7a23ff4</page><required_translations>[ ]</required_translations><route/><suffix/><sys_class_name>sys_ux_page_property</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-14 10:36:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>global</sys_domain_path><sys_id>0175e9850ac4d2100a1434011eea90e5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>chrome_footer</sys_name><sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package><sys_policy/><sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope><sys_update_name>sys_ux_page_property_0175e9850ac4d2100a1434011eea90e5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-14 10:36:04</sys_updated_on><type>json</type><unique_name>x_1366865_performa.5975e9855bc4d2106d7a8ffaa7a23ff4.root.chrome_footer</unique_name><value>{"public_page":{"enable_footer_topbar":false,"footer_topbar_options":{},"enable_footer_bar":false,"footer_bar_options":{}}}</value></sys_ux_page_property></record_update>]]></payload>
+        <payload_hash>-369552899</payload_hash>
+        <record_name>chrome_footer</record_name>
+        <reverted_from/>
+        <source>5fe80820c30012106248f6edd40131cf</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2024-08-12 14:34:48</sys_created_on>
+        <sys_id>75266109c3c4d2106248f6edd4013122</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>19147035b400000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>UX Page Property</type>
+        <update_guid>352661095ec4d210505884f6b59e3422</update_guid>
+        <update_guid_history>352661095ec4d210505884f6b59e3422:-369552899</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 10:39:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_page_property">sys_ux_page_property</sys_db_object>
+        <sys_id>72da34f90ad24d6ca097464c830f1004</sys_id>
+        <sys_metadata>0175e9850ac4d2100a1434011eea90e5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>chrome_footer</sys_name>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_scope_delete display_value="">07f1d999c63c48b9912e0b43af9871b9</sys_scope_delete>
+        <sys_update_name>sys_ux_page_property_0175e9850ac4d2100a1434011eea90e5</sys_update_name>
+        <sys_update_version display_value="sys_ux_page_property_0175e9850ac4d2100a1434011eea90e5">75266109c3c4d2106248f6edd4013122</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 10:39:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1366865_performa.TaskTrackingIssues</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>TaskTrackingIssues</name>
+        <script><![CDATA[var TaskTrackingIssues = Class.create();
+TaskTrackingIssues.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getIssuesForUser: function() {
+        var userId = this.getParameter('sysparm_user_id'); // Get the user ID passed from the client script
+        var issues = [];
+        
+        var gr = new GlideRecord('x_1366865_performa_task_tracking'); // Task Tracking Table
+        gr.addQuery('user_id', userId);
+        gr.query();
+        
+        while (gr.next()) {
+            issues.push(gr.getValue('issue_number'));
+        }
+        
+        return JSON.stringify(issues); // Return the issues as a JSON string
+    },
+    type: 'TaskTrackingIssues'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-13 18:26:20</sys_created_on>
+        <sys_id>c957463cc34492106248f6edd4013136</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TaskTrackingIssues</sys_name>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_update_name>sys_script_include_c957463cc34492106248f6edd4013136</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-13 18:26:20</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c957463cc34492106248f6edd4013136</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-13 18:26:20</sys_created_on>
+        <sys_id>e8870af8c34492106248f6edd4013173</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-13 18:26:20</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="DELETE">
+        <active>true</active>
+        <applicability display_value="Audience for app performance-insight-workspace">7c766909c3c4d2106248f6edd4013143</applicability>
+        <list/>
+        <order>100</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 10:40:23</sys_created_on>
+        <sys_id>09766909c3c4d2106248f6edd40131c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_09766909c3c4d2106248f6edd40131c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 10:40:23</sys_updated_on>
+    </sys_ux_applicability_m2m_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</application>
+        <file_path/>
+        <instance_id>5c667e941b1ebd18e84d2f8dee4bcb9c</instance_id>
+        <instance_name>dev199205</instance_name>
+        <name>sys_ux_applicability_m2m_list_09766909c3c4d2106248f6edd40131c8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list"><sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE"><active>true</active><applicability display_value="Audience for app performance-insight-workspace">7c766909c3c4d2106248f6edd4013143</applicability><list/><order>100</order><sys_class_name>sys_ux_applicability_m2m_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-14 10:40:23</sys_created_on><sys_id>09766909c3c4d2106248f6edd40131c8</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package><sys_policy/><sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope><sys_update_name>sys_ux_applicability_m2m_list_09766909c3c4d2106248f6edd40131c8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-14 10:40:23</sys_updated_on></sys_ux_applicability_m2m_list></record_update>]]></payload>
+        <payload_hash>418991488</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>100815e8c34c12106248f6edd40131f0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 10:40:48</sys_created_on>
+        <sys_id>0786ed09c3c4d2106248f6edd4013107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1915079d8940000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 10:40:48</sys_updated_on>
+        <type>List Applicability</type>
+        <update_guid>8d766909abc4d210770b91a033ca50c9</update_guid>
+        <update_guid_history>8d766909abc4d210770b91a033ca50c9:1921234437,8d766909abc4d210770b91a033ca50c9:1921234437</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-14 10:40:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_applicability_m2m_list">sys_ux_applicability_m2m_list</sys_db_object>
+        <sys_id>479f6b3edb6e4f47897f931d27f05ae1</sys_id>
+        <sys_metadata>09766909c3c4d2106248f6edd40131c8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Performance Insight Workspace" source="x_1366865_performa">d00819a4c34c12106248f6edd4013175</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Performance Insight Workspace">d00819a4c34c12106248f6edd4013175</sys_scope>
+        <sys_scope_delete display_value="">07f1d999c63c48b9912e0b43af9871b9</sys_scope_delete>
+        <sys_update_name>sys_ux_applicability_m2m_list_09766909c3c4d2106248f6edd40131c8</sys_update_name>
+        <sys_update_version display_value="sys_ux_applicability_m2m_list_09766909c3c4d2106248f6edd40131c8">0786ed09c3c4d2106248f6edd4013107</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-14 10:40:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
